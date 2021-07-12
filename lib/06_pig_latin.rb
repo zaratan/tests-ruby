@@ -10,6 +10,7 @@ def translate_word(word)
 end
 
 # This is the (unused) version without capitalization and punctuation
+# This may be easier to read: https://gist.github.com/zaratan/cc35154838d80bee293dbed99904629a
 def tr_word(word)
   # the first catch qu or anything that is not a vowel.
   # the second catch the rest of the word
