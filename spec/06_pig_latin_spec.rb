@@ -46,7 +46,18 @@ describe '#translate' do
     expect(s).to eq('ethay ickquay ownbray oxfay')
   end
 
-  # Test-driving bonus:
-  # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
-  # * retain the punctuation from the original phrase
+  it 'translates words starting with just a q' do
+    s = translate('the qabc')
+    expect(s).to eq('ethay abcqay')
+  end
+
+  it 'translates capitalization' do
+    s = translate('the Quick brown Fox')
+    expect(s).to eq('ethay Ickquay ownbray Oxfay')
+  end
+
+  it 'translates puntuation is kept' do
+    s = translate('the, quick : brown fox !Lol')
+    expect(s).to eq('ethay, ickquay : ownbray oxfay !Ollay')
+  end
 end
