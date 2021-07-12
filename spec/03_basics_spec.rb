@@ -17,13 +17,13 @@ describe 'crazy stuff on strings' do
   # Hint: google ruby string
   it 'does crazy stuff on strings' do
     expect(reverse_upcase_noLTA('Tries this at Home, Kids')).to eq(
-      'SDIK ,EMOH  SIH SEIR'
+      'SDIK ,EMOH  SIH SEIR',
     )
     expect(reverse_upcase_noLTA('Ponies loves carrots')).to eq(
-      'SORRC SEVO SEINOP'
+      'SORRC SEVO SEINOP',
     )
     expect(reverse_upcase_noLTA('qwertyuiopasdfghjkl;zxcvbn')).to eq(
-      'NBVCXZ;KJHGFDSPOIUYREWQ'
+      'NBVCXZ;KJHGFDSPOIUYREWQ',
     )
   end
 end
@@ -53,10 +53,10 @@ describe 'crazy stuff on arrays' do
   it 'does crazy stuff on Arrays' do
     expect(magic_array([1, 2, 3, 4, 5, 6])).to eq([2, 4, 8, 10])
     expect(magic_array([1, [2, 3], 4, 5, 6, 23, 31, [1, 2, 3]])).to eq(
-      [2, 4, 8, 10, 46, 62]
+      [2, 4, 8, 10, 46, 62],
     )
     expect(magic_array([[32, 54], [48, 12], [21, [1, 2, [3]]], 7, 8])).to eq(
-      [2, 4, 14, 16, 64]
+      [2, 4, 14, 16, 64],
     )
   end
 end
