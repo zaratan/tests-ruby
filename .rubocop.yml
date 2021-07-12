@@ -12,6 +12,7 @@ AllCops:
   DisplayStyleGuide: true
   DisplayCopNames: true
   SuggestExtensions: false
+  TargetRubyVersion: 2.7
   Exclude:
     - 'bin/*'
     - 'vendor/**/*'
@@ -23,3 +24,10 @@ Metrics/BlockLength:
     - 'Guardfile'
     - 'vendor/bundle'
     - '*.gemspec'
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Naming/MethodName:
+  Exclude:
+    - 'lib/03_basics.rb'

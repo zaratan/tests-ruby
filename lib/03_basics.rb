@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def who_is_bigger(a, b, c)
   return 'nil detected' if [a, b, c].any?(&:nil?)
 
@@ -11,7 +13,7 @@ def reverse_upcase_noLTA(str)
   str.reverse.upcase.tr('LTA', '')
 end
 
-def array_42(arr)
+def array42(arr)
   arr.include?(42)
 end
 

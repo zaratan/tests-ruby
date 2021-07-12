@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 def ctof(temp)
   temp * 1.8 + 32
 end

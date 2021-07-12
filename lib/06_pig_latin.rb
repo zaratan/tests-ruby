@@ -1,10 +1,11 @@
+# frozen_string_literal: true
 # Respecting capitalization and punctuation make that function hard to read.
 def translate_word(word)
-  return word if word =~ /^\p{P}+$/
+  return word if /^\p{P}+$/.match?(word)
   res =
     word.gsub(
       /^(\p{P}*)((?:qu|[^aeiouyàéèùêôîâûëäïöü]|\p{P})*)([^\p{P}]*)(\p{P}*)/i,
-      '\1\3\2ay\4',
+      '\1\3\2ay\4'
     ).downcase
   word =~ /^(\p{P}*)\p{Lu}/ ? "#{$1}#{res.gsub(/\p{P}/, '').capitalize}" : res
 end

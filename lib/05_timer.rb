@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 def time_string(sec)
   # Ok, I'm cheating a bit here.
   # Time.at(xxx) returns the time after xxx second starting at the 1 january of 1970.
